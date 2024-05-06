@@ -3,16 +3,20 @@ import FoundButton from "./FoundButton.jsx";
 import NoButton from "./NoButton.jsx";
 
 const Question = () => {
-  const handleClick = () => {
+  const handleFoundClick = () => {
     alert ("Button found!")
+  }
+
+  const handleNoClick = () => {
+    alert ("I did not find the piece!")
   }
 
   return (
     <div>
       <h1>Have you looked around your area?</h1>
       <div>
-        <FoundButton onClick={handleClick} label="Found" />
-        <NoButton onClick={handleClick} label="No"/>  
+        <FoundButton onClick={handleFoundClick} label="Found" />
+        <NoButton onClick={handleNoClick} label="No"/>  
       </div>
     </div>
   )
