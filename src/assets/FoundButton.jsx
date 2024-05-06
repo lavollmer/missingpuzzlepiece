@@ -1,8 +1,13 @@
 import React from 'react'
 
 const FoundButton = () => {
+    const handleClick = () => {
+        alert("Button clicked!");
+    };
   return (
-    <div>FoundButton</div>
+    <div>
+        <button onClick={handleClick}>FOUND</button>
+    </div>
   )
 }
 
