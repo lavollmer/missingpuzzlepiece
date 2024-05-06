@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  // useNavigate is a hook provided by react-router-dom and ways of navigating between pages
+  const navigate = useNavigate();
+
   const handleClick = () => {
     alert("Button clicked!");
+    navigate.push("/question");
   };
   return (
     <>
