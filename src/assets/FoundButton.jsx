@@ -1,12 +1,10 @@
 import React from 'react'
 
 const FoundButton = () => {
-    const handleClick = () => {
-        alert("Button clicked!");
-    };
+
   return (
     <div>
-        <button onClick={handleClick}>FOUND</button>
+        <button>FOUND</button>
     </div>
   )
 }

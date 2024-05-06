@@ -163,8 +163,8 @@ Throughout this project, I learned a lot about Tailwind CSS, styling and how all
 ## Author
 
 - Website - [Laura Vollmer](https://lauradeveloper.com/)
-- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/lavollmer)
+- Github Profile - [@lavollmer](https://github.com/lavollmer)
 
 ## Acknowledgments
 
-Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+None
