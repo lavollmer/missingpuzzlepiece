@@ -1,10 +1,10 @@
 import React from 'react'
 
-const FoundButton = () => {
+const FoundButton = ({onClick, label}) => {
 
   return (
     <div>
-        <button>FOUND</button>
+        <button onClick={onClick}>{label}</button>
     </div>
   )
 }

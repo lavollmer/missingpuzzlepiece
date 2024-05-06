@@ -3,11 +3,11 @@ import FoundButton from "./FoundButton.jsx";
 import NoButton from "./NoButton.jsx";
 
 const Question = () => {
-  const handleFoundClick = () => {
+  const handleFoundClick = ({onClick, label}) => {
     alert ("Button found!")
   }
 
-  const handleNoClick = () => {
+  const handleNoClick = ({onClick, label}) => {
     alert ("I did not find the piece!")
   }
 

@@ -1,10 +1,10 @@
 import React from 'react'
 
-const NoButton = () => {
+const NoButton = ({onClick, label}) => {
 
   return (
     <div>
-        <button> Did not find</button>
+        <button onClick={onClick}>{label}</button>
     </div>
   )
 }
