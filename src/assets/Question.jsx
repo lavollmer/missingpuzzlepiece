@@ -1,25 +1,25 @@
-import React from 'react'
+import React from "react";
 import FoundButton from "./FoundButton.jsx";
 import NoButton from "./NoButton.jsx";
 
 const Question = () => {
-  const handleFoundClick = ({onClick, label}) => {
-    alert ("Button found!")
-  }
+  const handleFoundClick = () => {
+    alert("Button found!");
+  };
 
-  const handleNoClick = ({onClick, label}) => {
-    alert ("I did not find the piece!")
-  }
+  const handleNoClick = () => {
+    alert("I did not find the piece!");
+  };
 
   return (
     <div>
       <h1>Have you looked around your area?</h1>
       <div>
         <FoundButton onClick={handleFoundClick} label="Found" />
-        <NoButton onClick={handleNoClick} label="No"/>  
+        <NoButton onClick={handleNoClick} label="No" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Question
+export default Question;
