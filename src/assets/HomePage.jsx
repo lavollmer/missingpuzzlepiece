@@ -7,7 +7,7 @@ const HomePage = () => {
 
   const handleClick = () => {
     alert("Button clicked!");
-    navigate.push("/question");
+    navigate("/question");
   };
   return (
     <>
