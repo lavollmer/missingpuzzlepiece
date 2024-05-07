@@ -13,8 +13,9 @@ const Question = () => {
   const [foundClickCount, setFoundClickCount] = useState(0);
 
   const handleFoundClick = () => {
-    setFoundClickCount(foundClickCount + 1);
-    navigate("/result", {state: {foundClickCount: foundClickCount + 1}});
+    const newCount = foundClickCount + 1;
+    setFoundClickCount(newCount);
+    navigate("/result", { state: { foundClickCount: newCount } });
   };
 
   //variable represents an array of questions used in the quiz
