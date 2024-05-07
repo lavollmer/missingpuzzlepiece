@@ -1,10 +1,25 @@
 import React from "react";
+import { useNavigate} from "react-router-dom";
 
 const MakingPiece = () => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/result");
+    }
+
+    const handleHomeClick = () => {
+        navigate ("/");
+    }
+
   return (
     <div>
       <h1>Making a Puzzle Piece</h1>
-      <p>Below are instructions on how to make a puzzle piece.</p>
+      <p>
+        There are services on the internet, Youtube videos, and articles of how
+        to make a puzzle piece.
+      </p>
+      <p>Below are a sample of instructions on how to make a puzzle piece.</p>
       <h2>Materials</h2>
       <ul>
         <li>Cardboard</li>
@@ -29,6 +44,14 @@ const MakingPiece = () => {
         </li>
         <li>Color or add the image of the piece with glue to the cardboard.</li>
       </ol>
+      <p>
+        Let us know if you made the puzzle piece or decided it was time to let
+        it go.
+      </p>
+      <div>
+        <button onClick={handleClick}>Made the puzzle piece</button>
+        <button onClick={handleHomeClick}>Home Page</button>
+      </div>
     </div>
   );
 };
