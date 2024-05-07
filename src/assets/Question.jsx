@@ -9,8 +9,12 @@ const Question = () => {
   //currentQuestionIndex is the current question that is being displayed
   const [currentQuestionIndex, setCurrentQuestion] = useState(0);
 
+  //function that counts how many times the found button has been clicked
+  const [foundClickCount, setFoundClickCount] = useState(0);
+
   const handleFoundClick = () => {
-    navigate("/result");
+    setFoundClickCount(foundClickCount + 1);
+    navigate("/result", {state: {foundClickCount: foundClickCount + 1}});
   };
 
   //variable represents an array of questions used in the quiz
@@ -34,7 +38,6 @@ const Question = () => {
     "If you have a pet, have you checked their paw?",
     "If others are aware you are working on the puzzle, is someone pulling a prank on you?",
     "If all the other pieces are placed, are they where they belong on the puzzle?",
-    "Pause, take a moment to breath.",
   ];
 
   const handleNoClick = () => {
