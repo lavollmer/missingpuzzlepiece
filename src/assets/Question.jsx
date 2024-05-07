@@ -5,12 +5,15 @@ import { useNavigate } from "react-router-dom";
 
 const Question = () => {
   const navigate = useNavigate();
+
+  //currentQuestionIndex is the current question that is being displayed
   const [currentQuestionIndex, setCurrentQuestion] = useState(0);
 
   const handleFoundClick = () => {
     navigate("/result");
   };
 
+  //variable represents an array of questions used in the quiz
   const questions = [
     "Have you looked around your area?",
     "Have you checked under the table?",
@@ -35,10 +38,11 @@ const Question = () => {
   ];
 
   const handleNoClick = () => {
-    alert("I did not find the piece!");
+    // If there are more questions, show the next question
     if (currentQuestionIndex < questions.length -1) {
       setCurrentQuestion(currentQuestionIndex + 1);
     } else {
+      //if the condition is false, there are no more questions to display
       alert("I did not find the piece!");
     }
   };
