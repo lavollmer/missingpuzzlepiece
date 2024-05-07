@@ -1,11 +1,12 @@
 import React from "react";
-import {useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const ResultPage = () => {
   const navigate = useNavigate();
-  const location = useLocation ();
+  const location = useLocation();
   const foundClickCount = location.state ? location.state.foundClickCount : 0;
+  console.log("Found Click Count: ", foundClickCount);
 
   const handleClick = () => {
     navigate("/");
