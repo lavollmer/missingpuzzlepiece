@@ -8,7 +8,6 @@ const Question = () => {
   const [currentQuestionIndex, setCurrentQuestion] = useState(0);
 
   const handleFoundClick = () => {
-    alert("Button found!");
     navigate("/result");
   };
 

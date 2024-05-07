@@ -6,7 +6,6 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    alert("Button clicked!");
     navigate("/question");
   };
   return (
