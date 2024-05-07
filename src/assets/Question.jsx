@@ -44,10 +44,10 @@ const Question = () => {
     } else {
       //if the condition is false, there are no more questions to display
       alert("I did not find the piece!");
+      navigate("/manufacturer");
     }
   };
 
- 
   return (
     <>
       <div>
