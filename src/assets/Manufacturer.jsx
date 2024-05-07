@@ -1,6 +1,14 @@
 import React from "react";
+//importing navigate from react-router-dom
+import { useNavigate } from "react-router-dom";
 
 const Manufacturer = () => {
+const navigate = useNavigate ();
+
+const handleClick = () => {
+    navigate ("/makingapuzzlepiece");
+}
+
   return (
     <div>
       <h1>Contact the Manufacturer</h1>
@@ -35,6 +43,11 @@ const Manufacturer = () => {
       >
         Pomegranate Contact Us
       </a>
+      <div>
+        <h2>Need More Help</h2>
+        <p>I would like to make my own puzzle piece.</p>
+        <button onClick={handleClick}>Making a Puzzle Piece</button>
+      </div>
     </div>
   );
 };
