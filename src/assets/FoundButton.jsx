@@ -4,7 +4,7 @@ const FoundButton = ({onClick, label}) => {
 
   return (
     <div>
-        <button onClick={onClick}>{label}</button>
+        <button onClick={onClick} className='bg-green-500 hover:bg-green-700 text-white text-lg py-2 px-4 rounded'>{label}</button>
     </div>
   )
 }
