@@ -1,6 +1,6 @@
-import 'tailwindcss/tailwind.css';
+import "tailwindcss/tailwind.css";
 import "./App.css";
-import './index.css';
+import "./index.css";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./assets/HomePage.jsx";
 import Question from "./assets/Question.jsx";
@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/question" element={<Question />} />
-        <Route exact path="/manufacturer" element={<Manufacturer/>}/>
-        <Route exact path="/makingapuzzlepiece" element={<MakingPiece/>}/>
+        <Route exact path="/manufacturer" element={<Manufacturer />} />
+        <Route exact path="/makingapuzzlepiece" element={<MakingPiece />} />
         <Route exact path="/result" element={<Result />} />
       </Routes>
     </>

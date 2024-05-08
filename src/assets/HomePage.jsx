@@ -10,9 +10,13 @@ const HomePage = () => {
   };
   return (
     <>
-      <h1 className="text-blue-500">The Missing Puzzle Piece</h1>
-      <p className="text-pink-500">Lost a puzzle piece? Let us help!</p>
-      <button onClick={handleClick}>START</button>
+      <div className="bg-black min-h-screen">
+        <h1 className="text-white text-center mt-50">The Missing Puzzle Piece</h1>
+        <p className="text-white text-center">
+          Lost a puzzle piece? Let us help!
+        </p>
+        <button className="text-white" onClick={handleClick}>START</button>
+      </div>
     </>
   );
 };
