@@ -13,7 +13,7 @@ const ResultPage = () => {
   };
 
   return (
-    <div>
+    <div className="bg-black text-white text-center">
       <h1>Congrats!</h1>
       <h1>Thank you for using the Missing Puzzle Piece application!</h1>
       <div>

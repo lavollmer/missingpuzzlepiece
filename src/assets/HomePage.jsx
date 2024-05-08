@@ -10,7 +10,7 @@ const HomePage = () => {
   };
   return (
     <>
-      <div className="bg-black min-h-screen text-white text-center">
+      <div className="bg-black h-screen w-screen text-white text-center">
         <h1 className="text-xl text-bold">The Missing Puzzle Piece</h1>
         <p className="text-sm">A Free Application</p>
         <p className="text-md">Lost a puzzle piece? Let us help!</p>
