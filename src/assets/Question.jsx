@@ -22,7 +22,7 @@ const Question = () => {
 
     //variable represents an array of questions used in the quiz
     const questions = [
-      "Have you looked around your area?",
+      "Look around your physical location for the puzzle piece.",
       "Have you checked under the table?",
       "Have you checked the puzzle packaging?",
       "Have you checked the plastic wrap that the puzzle comes in?",
@@ -56,7 +56,7 @@ const Question = () => {
 
     return (
       <>
-        <div>
+        <div className="text-white text-center">
           <h1>{questions[currentQuestionIndex]}</h1>
           <div>
             <FoundButton onClick={handleFoundClick} label="Found" />
