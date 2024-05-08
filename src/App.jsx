@@ -11,7 +11,7 @@ import Footer from "./assets/Footer.jsx";
 
 function App() {
   return (
-    <div className="bg-black h-screen w-screen space-y-4">
+    <div className="bg-black min-h-screen w-screen space-y-4">
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/question" element={<Question />} />
