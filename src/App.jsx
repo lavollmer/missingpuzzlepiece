@@ -7,6 +7,7 @@ import Question from "./assets/Question.jsx";
 import Result from "./assets/ResultPage.jsx";
 import Manufacturer from "./assets/Manufacturer.jsx";
 import MakingPiece from "./assets/MakingPiece.jsx";
+import Footer from "./assets/Footer.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/makingapuzzlepiece" element={<MakingPiece />} />
         <Route exact path="/result" element={<Result />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
