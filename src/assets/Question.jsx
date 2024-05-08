@@ -20,14 +20,6 @@ const Question = () => {
     navigate("/result", { state: { foundClickCount: newCount } });
   };
 
-  useEffect(() => {
-    if (foundClickCount > 0) {
-      navigate("/result", { state: { foundClickCount: foundClickCount } }, [
-        foundClickCount,
-        navigate,
-      ]);
-    }
-
     //variable represents an array of questions used in the quiz
     const questions = [
       "Have you looked around your area?",
@@ -73,7 +65,6 @@ const Question = () => {
         </div>
       </>
     );
-  });
-};
+  }
 
 export default Question;
