@@ -56,9 +56,9 @@ const Question = () => {
 
     return (
       <>
-        <div className="text-white text-center">
+        <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-4">
           <h1>{questions[currentQuestionIndex]}</h1>
-          <div>
+          <div className="flex flex-col space-y-6">
             <FoundButton onClick={handleFoundClick} label="Found" />
             <NoButton onClick={handleNoClick} label="No" />
           </div>
