@@ -13,7 +13,7 @@ const ResultPage = () => {
   };
 
   return (
-    <div className="bg-black text-white text-center">
+    <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
       <h1>Congrats!</h1>
       <h1>Thank you for using the Missing Puzzle Piece application!</h1>
       <div>

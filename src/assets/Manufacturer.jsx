@@ -10,12 +10,13 @@ const handleClick = () => {
 }
 
   return (
-    <div>
-      <h1>Contact the Manufacturer</h1>
+    <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
+      <h1 className="text-2xl md:text-4xl text-bold mb-2">Contact the Manufacturer</h1>
+      <p>Sorry you could not find the puzzle piece. Take a deep breath, we have more options.</p>
       <p>
         Below are a list of the most popular puzzle manufacturers in the USA.
       </p>
-      <h2>Ravensburger</h2>
+      <h2 className="text-xl md:text-2xl text-bold mb-2">Ravensburger</h2>
       <a
         href="https://www.ravensburger.us/service/contact-us/index.html"
         rel="nooperner noreferrer"
@@ -45,8 +46,8 @@ const handleClick = () => {
       </a>
       <div>
         <h2>Need More Help</h2>
-        <p>I would like to make my own puzzle piece.</p>
-        <button onClick={handleClick}>Making a Puzzle Piece</button>
+        <p className="font-bold text-green-500">I would like to make my own puzzle piece.</p>
+        <button onClick={handleClick} className='bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded'>Making a Puzzle Piece</button>
       </div>
     </div>
   );

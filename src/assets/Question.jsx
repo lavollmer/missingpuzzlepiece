@@ -23,7 +23,7 @@ const Question = () => {
     //variable represents an array of questions used in the quiz
     const questions = [
       "Look around your physical location for the puzzle piece.",
-      "Have you checked under the table?",
+      "Look under the table.",
       "Have you checked the puzzle packaging?",
       "Have you checked the plastic wrap that the puzzle comes in?",
       "Have you checked the puzzle box?",
@@ -49,7 +49,6 @@ const Question = () => {
         setCurrentQuestion(currentQuestionIndex + 1);
       } else {
         //if the condition is false, there are no more questions to display
-        alert("I did not find the piece!");
         navigate("/manufacturer");
       }
     };

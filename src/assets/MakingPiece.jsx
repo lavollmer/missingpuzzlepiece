@@ -13,7 +13,7 @@ const MakingPiece = () => {
     }
 
   return (
-    <div>
+    <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
       <h1>Making a Puzzle Piece</h1>
       <p>
         There are services on the internet, Youtube videos, and articles of how
