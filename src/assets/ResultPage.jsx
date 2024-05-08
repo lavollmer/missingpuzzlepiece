@@ -19,7 +19,7 @@ const ResultPage = () => {
       <div>
         <h2>We have saved {foundClickCount} of puzzle pieces!</h2>
       </div>
-      <button onClick={handleClick}>Return Home</button>
+      <button onClick={handleClick} className='bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded'>Return Home</button>
     </div>
   );
 };

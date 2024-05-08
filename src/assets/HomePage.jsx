@@ -10,11 +10,11 @@ const HomePage = () => {
   };
   return (
     <>
-      <div className="bg-black min-h-screen text-white text-center mt-50">
+      <div className="bg-black min-h-screen text-white text-center">
         <h1 className="text-xl text-bold">The Missing Puzzle Piece</h1>
         <p className="text-sm">A Free Application</p>
         <p className="text-md">Lost a puzzle piece? Let us help!</p>
-        <button onClick={handleClick}>START</button>
+        <button onClick={handleClick} className='bg-blue-500 hover:bg-blue-700 text-white text-md font-bold py-2 px-4 rounded'>Start</button>
       </div>
     </>
   );
