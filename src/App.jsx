@@ -12,14 +12,16 @@ import Footer from "./assets/Footer.jsx";
 function App() {
   return (
     <>
-      <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/question" element={<Question />} />
-        <Route exact path="/manufacturer" element={<Manufacturer />} />
-        <Route exact path="/makingapuzzlepiece" element={<MakingPiece />} />
-        <Route exact path="/result" element={<Result />} />
-      </Routes>
-      <Footer/>
+      <div className="bg-black h-screen w-screen">
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/question" element={<Question />} />
+          <Route exact path="/manufacturer" element={<Manufacturer />} />
+          <Route exact path="/makingapuzzlepiece" element={<MakingPiece />} />
+          <Route exact path="/result" element={<Result />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }
