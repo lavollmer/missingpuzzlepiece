@@ -11,18 +11,16 @@ import Footer from "./assets/Footer.jsx";
 
 function App() {
   return (
-    <>
-      <div className="bg-black h-screen w-screen space-y-4">
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/question" element={<Question />} />
-          <Route exact path="/manufacturer" element={<Manufacturer />} />
-          <Route exact path="/makingapuzzlepiece" element={<MakingPiece />} />
-          <Route exact path="/result" element={<Result />} />
-        </Routes>
-        <Footer />
-      </div>
-    </>
+    <div className="bg-black h-screen w-screen space-y-4">
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/question" element={<Question />} />
+        <Route exact path="/manufacturer" element={<Manufacturer />} />
+        <Route exact path="/makingapuzzlepiece" element={<MakingPiece />} />
+        <Route exact path="/result" element={<Result />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
