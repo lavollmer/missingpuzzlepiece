@@ -13,9 +13,9 @@ const Question = () => {
   const [foundClickCount, setFoundClickCount] = useState(0);
 
   const handleFoundClick = () => {
-    const newCount = foundClickCount + 1;
+    let newCount = foundClickCount + 1;
     setFoundClickCount(newCount);
-    console.log("Found Click Count: ", newCount);
+    console.log(`Found Click Count: , New count: ${newCount}`);
     navigate("/result", { state: { foundClickCount: newCount } });
   };
 
