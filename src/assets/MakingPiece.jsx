@@ -14,21 +14,21 @@ const MakingPiece = () => {
 
   return (
     <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
-      <h1>Making a Puzzle Piece</h1>
+      <h1 className="text-2xl md:text-4xl text-bold mb-2">Making a Puzzle Piece</h1>
       <p>
         There are services on the internet, Youtube videos, and articles of how
         to make a puzzle piece.
       </p>
       <p>Below are a sample of instructions on how to make a puzzle piece.</p>
-      <h2>Materials</h2>
-      <ul>
-        <li>Cardboard</li>
-        <li>Scissors or Box cutter</li>
-        <li>Glue</li>
-        <li>Pen</li>
-        <li>Marker</li>
+      <h2 className="text-xl md:text-2xl text-bold mb-2">Materials</h2>
+      <ul className="text-white">
+        <ol>Cardboard</ol>
+        <ol>Scissors or Box cutter</ol>
+        <ol>Glue</ol>
+        <ol>Pen</ol>
+        <ol>Marker</ol>
       </ul>
-      <h2>Instructions</h2>
+      <h2 className="text-xl md:text-2xl text-bold mb-2">Instructions</h2>
       <ol>
         <li>
           Find a piece of cardboard that is similar in thickness to the puzzle
