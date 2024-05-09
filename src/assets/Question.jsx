@@ -31,8 +31,8 @@ const Question = () => {
       "Look under the chairs around you or in the cushions.",
       "Look under the couch or in the cushions.",
       "Check your pockets or have others check the pockets of those around you.",
-      "Check any counters located around you",
-      "Check every room the puzzle was located in",
+      "Check any counters located around you.",
+      "Check every room the puzzle was located in.",
       "If you have vacuumed, check the vacuum bag or canister.",
       "Check the trash can or recycling bin.",
       "Check the laundry basket.",
@@ -41,6 +41,7 @@ const Question = () => {
       "If you have a pet, check their paw and fur.",
       "If others are aware you are working on the puzzle, ask if they are pulling a prank on you.",
       "If all the other pieces are placed, check that the pieces are in the right place.",
+      "Check that you completed the puzzle minus the missing pieces. If missing pieces still, proceed."
     ];
 
     const handleNoClick = () => {

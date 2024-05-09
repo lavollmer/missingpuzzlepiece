@@ -3,18 +3,23 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Manufacturer = () => {
-const navigate = useNavigate ();
+  const navigate = useNavigate();
 
-const handleClick = () => {
-    navigate ("/makingapuzzlepiece");
-}
+  const handleClick = () => {
+    navigate("/makingapuzzlepiece");
+  };
 
   return (
     <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
-      <h1 className="text-2xl md:text-4xl text-bold mb-2">Contact the Manufacturer</h1>
-      <p>Sorry you could not find the puzzle piece. Take a deep breath, we have more options.</p>
       <p>
-        Below are a list of the most popular puzzle manufacturers in the USA.
+        Sorry you could not find the puzzle piece. Take a deep breath, we have
+        more options.
+      </p>
+      <h1 className="text-2xl md:text-4xl text-bold mb-2">
+        Contact the Manufacturer
+      </h1>
+      <p>
+        Below are a list of the most popular puzzle manufacturers.
       </p>
       <h2 className="text-xl md:text-2xl text-bold mb-2">Ravensburger</h2>
       <a
@@ -49,8 +54,15 @@ const handleClick = () => {
         Pomegranate Contact Us
       </a>
       <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
-        <h2 className="font-bold text-green-500 ">I would like to make my own puzzle piece.</h2>
-        <button onClick={handleClick} className='bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded'>Making a Puzzle Piece</button>
+        <h2 className="font-bold text-green-500 ">
+          I would like to make my own puzzle piece.
+        </h2>
+        <button
+          onClick={handleClick}
+          className="bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded"
+        >
+          Making a Puzzle Piece
+        </button>
       </div>
     </div>
   );

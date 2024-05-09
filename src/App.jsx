@@ -8,6 +8,7 @@ import Result from "./assets/ResultPage.jsx";
 import Manufacturer from "./assets/Manufacturer.jsx";
 import MakingPiece from "./assets/MakingPiece.jsx";
 import Footer from "./assets/Footer.jsx";
+import Feedback from "./assets/Feedback.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/manufacturer" element={<Manufacturer />} />
         <Route exact path="/makingapuzzlepiece" element={<MakingPiece />} />
         <Route exact path="/result" element={<Result />} />
+        <Route exact path="/feedback" element={<Feedback />} />
       </Routes>
       <Footer />
     </div>
