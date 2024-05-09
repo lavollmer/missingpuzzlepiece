@@ -35,12 +35,12 @@ const Question = () => {
       "Check every room the puzzle was located in",
       "If you have vacuumed, check the vacuum bag or canister.",
       "Check the trash can or recycling bin.",
-      "Have you checked the laundry basket?",
-      "If you have children, have you checked their toy box?",
-      "If you have a pet, have you checked their bed?",
-      "If you have a pet, have you checked their paw?",
-      "If others are aware you are working on the puzzle, is someone pulling a prank on you?",
-      "If all the other pieces are placed, are they where they belong on the puzzle?",
+      "Check the laundry basket.",
+      "If you have children, check their toy box.",
+      "If you have a pet, check their bed.",
+      "If you have a pet, check their paw and fur.",
+      "If others are aware you are working on the puzzle, ask if they are pulling a prank on you.",
+      "If all the other pieces are placed, check that the pieces are in the right place.",
     ];
 
     const handleNoClick = () => {
