@@ -12,8 +12,8 @@ const Feedback = () => {
   };
 
   return (
-    <div className="text-white">
-      <h1>Feedback Form</h1>
+    <div className="flex flex-col text-white text-center">
+      <h1 className="text-2xl">Feedback Form</h1>
       <p>Please feel out this feedback form so we can improve our site!</p>
       <form onSubmit={handleSubmit}>
         <textarea
@@ -25,6 +25,7 @@ const Feedback = () => {
           onChange={(e) => setFeedback(e.target.value)}
         />
         <div className="mb-4">
+          <p>Did you enjoy using our site?</p>
           <button type="button" onClick={() => setThumbsUp(!thumbsUp)}>
             {thumbsUp ? "👍" : "👍"}
           </button>
