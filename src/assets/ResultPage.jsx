@@ -12,6 +12,10 @@ const ResultPage = () => {
     navigate("/");
   };
 
+  const handleFeedbackClick = () => {
+    navigate("/feedback");
+  };
+
   return (
     <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
       <h1>Congrats!</h1>
@@ -20,6 +24,7 @@ const ResultPage = () => {
         <h2>We have saved {foundClickCount} puzzles!</h2>
       </div>
       <button onClick={handleClick} className='bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded'>Return Home</button>
+      <button onClick={handleFeedbackClick} className='bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded'>Feedback Form</button>
     </div>
   );
 };
