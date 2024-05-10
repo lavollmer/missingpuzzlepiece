@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 const Feedback = () => {
   const [feedback, setFeedback] = useState("");
@@ -11,7 +12,7 @@ const Feedback = () => {
   };
 
   return (
-    <div>
+    <div className="text-white">
       <h1>Feedback Form</h1>
       <p>Please feel out this feedback form so we can improve our site!</p>
       <form onSubmit={handleSubmit}>
