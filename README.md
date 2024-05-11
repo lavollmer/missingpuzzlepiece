@@ -22,7 +22,7 @@ The project's scope involved developing a missing puzzle piece application using
 
 ### The challenge
 
-The application was created for a personal project. Many puzzle pieces are lost when finishing a puzzle and there is no good application to help support someone finding a piece. A puzzle piece is difficult DIY or order from a manufacturer when it is lost. Therefore, the only option to search for the puzzle piece. A puzzle's value depreciates significantly when one or many puzzle pieces are missing. I wanted to create a application that was designed to be responsive, providing an optimal layout for any device's screen size. 
+This application was developed as a personal project to address a common issue faced by puzzle enthusiasts - the loss of puzzle pieces. When a piece goes missing, it's challenging to create a DIY replacement or order a new one from the manufacturer. As a result, the only viable option is to search for the lost piece. The absence of one or more pieces significantly reduces a puzzle's value. Therefore, I aimed to create a responsive application that offers an optimal layout across various device screen sizes, assisting users in their search for missing puzzle pieces.
 
 ### Screenshot
 
