@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="text-white text-center text-sm md:text-md">
+      <div className="text-white text-center text-xs md:text-md">
         Copyright &copy; 2024. A creation by Laura Developer |
         <p> An application made for
         puzzlers developed by a puzzler |</p>

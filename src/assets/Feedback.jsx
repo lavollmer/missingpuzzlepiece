@@ -12,9 +12,9 @@ const Feedback = () => {
   };
 
   return (
-    <div className="flex flex-col text-white text-center text-xl mb-6 m-10">
-      <h1 className="text-bold text-green-200">Feedback Form</h1>
-      <p className="mb-4">Please feel out this feedback form so we can improve our site!</p>
+    <div className="flex flex-col text-white text-center text-xl m-10">
+      <h1 className="text-bold text-2xl text-green-200">Feedback Form</h1>
+      <p className="mb-4">Please fill out this feedback form so we can improve our site!</p>
       <div className="mb-4 text-xl">
         <p>Did you enjoy using the site? (select one)</p>
         <button type="button" onClick={() => setThumbsUp(!thumbsUp)}>
