@@ -12,28 +12,29 @@ const Feedback = () => {
   };
 
   return (
-    <div className="flex flex-col text-white text-center text-2xl mb-6">
-      <h1 className="mb-6">Feedback Form</h1>
-      <p>Please feel out this feedback form so we can improve our site!</p>
+    <div className="flex flex-col text-white text-center text-xl mb-6 m-10">
+      <h1 className="text-bold text-green-200">Feedback Form</h1>
+      <p className="mb-4">Please feel out this feedback form so we can improve our site!</p>
+      <div className="mb-4 text-xl">
+        <p>Did you enjoy using the site? (select one)</p>
+        <button type="button" onClick={() => setThumbsUp(!thumbsUp)}>
+          {thumbsUp ? "Yes👍" : "Yes👍"}
+        </button>
+        <button type="button" onClick={() => setThumbsDown(!thumbsDown)}>
+          {thumbsDown ? "No👎" : "No👎"}
+        </button>
+      </div>
+      <p className="mb-4">How was your experience with our site? Any suggestions?</p>
       <form onSubmit={handleSubmit}>
         <textarea
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="feedback"
           type="text"
           placeholder="Enter your feedback"
           value={feedback}
           onChange={(e) => setFeedback(e.target.value)}
         />
-        <div className="mb-4 text-2xl">
-          <p>Did you enjoy using the site?</p>
-          <button type="button" onClick={() => setThumbsUp(!thumbsUp)}>
-            {thumbsUp ? "👍" : "👍"}
-          </button>
-          <button type="button" onClick={() => setThumbsDown(!thumbsDown)}>
-            {thumbsDown ? "👎" : "👎"}
-          </button>
-        </div>
-        <div className="flex flex-col items-center justify-between">
+        <div className="flex flex-col items-center justify-between mb-4">
           <button
             className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
