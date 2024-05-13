@@ -12,9 +12,10 @@ const Footer = () => {
   return (
     <div>
       <div className="text-white text-center text-sm md:text-md">
-        Copyright 2024. A creation by Laura Developer. An application made for
-        puzzlers developer by a puzzler.
-        <a onClick={handleClick} className="text-green hover:text-yellow-100"> Have Feedback for Me?</a>
+        Copyright &copy; 2024. A creation by Laura Developer |
+        <p> An application made for
+        puzzlers developed by a puzzler |</p>
+        <a onClick={handleClick} className="text-green hover:text-yellow-100">? Have Feedback for Me ?</a>
         
       </div>
     </div>
