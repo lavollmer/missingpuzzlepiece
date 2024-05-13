@@ -12,8 +12,8 @@ const Feedback = () => {
   };
 
   return (
-    <div className="flex flex-col text-white text-center">
-      <h1 className="text-2xl">Feedback Form</h1>
+    <div className="flex flex-col text-white text-center text-2xl mb-6">
+      <h1 className="mb-6">Feedback Form</h1>
       <p>Please feel out this feedback form so we can improve our site!</p>
       <form onSubmit={handleSubmit}>
         <textarea
@@ -24,8 +24,8 @@ const Feedback = () => {
           value={feedback}
           onChange={(e) => setFeedback(e.target.value)}
         />
-        <div className="mb-4">
-          <p>Did you enjoy using our site?</p>
+        <div className="mb-4 text-2xl">
+          <p>Did you enjoy using the site?</p>
           <button type="button" onClick={() => setThumbsUp(!thumbsUp)}>
             {thumbsUp ? "👍" : "👍"}
           </button>
@@ -33,9 +33,9 @@ const Feedback = () => {
             {thumbsDown ? "👎" : "👎"}
           </button>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-center justify-between">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Submit
