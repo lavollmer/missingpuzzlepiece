@@ -2,7 +2,6 @@ import React from "react";
 //importing navigate from react-router-dom
 import { useNavigate } from "react-router-dom";
 
-
 const Footer = () => {
   const navigate = useNavigate();
 
@@ -17,13 +16,12 @@ const Footer = () => {
         puzzlers developer by a puzzler.
       </div>
       <div>
-        <Button
+        <a
           onClick={handleClick}
           className="bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded"
         >
-          {" "}
-          Feedback{" "}
-        </Button>
+          Feedback
+        </a>
       </div>
     </div>
   );
