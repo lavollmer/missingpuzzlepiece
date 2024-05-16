@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Feedback = () => {
-  const history = useHistory ();  
-  
+  const navigate = useNavigate();
+
   const [feedback, setFeedback] = useState("");
   const [thumbsUp, setThumbsUp] = useState(false);
   const [thumbsDown, setThumbsDown] = useState(false);
@@ -28,7 +28,7 @@ const Feedback = () => {
       if (response.ok) {
         setFeedback("");
         alert("Feedback submitted successfully!");
-        history.push("/");
+        navigate("/");
       } else {
         alert("Feedback submission failed.");
       }
