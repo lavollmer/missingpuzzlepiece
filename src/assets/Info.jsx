@@ -23,8 +23,8 @@ const Info = () => {
   };
 
   return (
-    <div className="flex flex-col text-white items-center m-6 space-y-6">
-      <h1 className="text-xl font-bold mb-10">Before You Begin</h1>
+    <div className="flex flex-col text-white items-center m-10 space-y-6">
+      <h1 className="text-2xl font-bold mb-6">Before You Begin</h1>
       <h2 className="text-xl mb-10">
         You will be shown a series of questions (one at a time) to help find
         your puzzle piece. Results are best if you review each question and
