@@ -1,8 +1,13 @@
 import React from "react";
 //importing navigate from react-router-dom
 import { useNavigate } from "react-router-dom";
+import {useEffect} from 'react';
 
 const Manufacturer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const navigate = useNavigate();
 
   const handleClick = () => {

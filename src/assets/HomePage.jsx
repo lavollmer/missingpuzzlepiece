@@ -1,7 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import {useEffect} from "react";
 
 const HomePage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   // useNavigate is a hook provided by react-router-dom and ways of navigating between pages
   const navigate = useNavigate();
 

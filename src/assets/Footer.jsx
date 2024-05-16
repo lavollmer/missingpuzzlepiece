@@ -11,12 +11,14 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="text-white text-center text-xs md:text-md">
-        Copyright &copy; 2024. A creation by Laura Developer |
-        <p> An application made for
-        puzzlers developed by a puzzler |</p>
-        <a onClick={handleClick} className="text-green hover:text-yellow-100">? Have Feedback for Me ?</a>
-        
+      <div className="flex flex-col items-center text-center text-xs md:text-md">
+        <p className="text-white">
+          Copyright &copy; 2024. A creation by Laura Developer | An application
+          made for puzzlers developed by a puzzler |
+        </p>
+        <a onClick={handleClick} className="text-green-300 hover:text-yellow-100">
+          ? Have Feedback for Me ?
+        </a>
       </div>
     </div>
   );

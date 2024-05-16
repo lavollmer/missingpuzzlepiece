@@ -1,12 +1,14 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const ResultPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const navigate = useNavigate();
-  // const location = useLocation();
-  // const foundClickCount = location.state ? location.state.foundClickCount : 0;
-  // console.log("Found Click Count: ", foundClickCount);
 
   const handleClick = () => {
     navigate("/");
@@ -23,8 +25,18 @@ const ResultPage = () => {
       <div>
         <h2>We hope you enjoyed it!</h2>
       </div>
-      <button onClick={handleClick} className='bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded'>Return Home</button>
-      <button onClick={handleFeedbackClick} className='bg-yellow-500 hover:bg-yellow-700 text-white text-md py-2 px-4 rounded'>Feedback Form</button>
+      <button
+        onClick={handleClick}
+        className="bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded"
+      >
+        Return Home
+      </button>
+      <button
+        onClick={handleFeedbackClick}
+        className="bg-yellow-500 hover:bg-yellow-700 text-white text-md py-2 px-4 rounded"
+      >
+        Feedback Form
+      </button>
     </div>
   );
 };
