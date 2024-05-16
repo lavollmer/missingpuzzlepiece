@@ -18,7 +18,7 @@ const Info = () => {
   };
 
   return (
-    <div className="flex flex-col text-white items-center justify-content m-6">
+    <div className="flex flex-col text-white items-center m-6 space-y-6">
       <h1 className="text-xl font-bold mb-10">Before You Begin</h1>
       <h2 className="text-xl mb-10">
         You will be shown a series of questions (one at a time) to help find
@@ -38,28 +38,28 @@ const Info = () => {
       </h2>
       <button
         onClick={handleQuestionClick}
-        className="bg-green-500 hover:bg-green-700 text-white text-xl font-bold py-2 px-8 rounded"
+        className="bg-green-500 hover:bg-green-700 text-white text-xl font-bold py-2 px-4 rounded"
       >
         Start Location Questions
       </button>
-      <div className="flex flex-col space-y-4 mt-6">
-        <h2 className="text-xl mb-4">
-          If you have went through all location questions or would like to
-          receive more resources, select one of the buttons below.
-        </h2>
-        <button
-          onClick={handleManufacturerClick}
-          className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold py-2 px-8 rounded"
-        >
-          Contact Manufacturer
-        </button>
-        <button
-          onClick={handleMakeAPieceClick}
-          className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold py-2 px-8 rounded"
-        >
-          Make a Puzzle Piece
-        </button>
-      </div>
+
+      <h2 className="text-xl mb-4">
+        If you have went through all location questions or would like to receive
+        more resources, select one of the buttons below.
+      </h2>
+
+      <button
+        onClick={handleManufacturerClick}
+        className="bg-blue-500 hover:bg-blue-700 text-white text-lg font-bold py-2 px-2 rounded"
+      >
+        Contact Manufacturer
+      </button>
+      <button
+        onClick={handleMakeAPieceClick}
+        className="bg-blue-500 hover:bg-blue-700 text-white text-lg font-bold py-2 px-2 rounded"
+      >
+        Make a Puzzle Piece
+      </button>
     </div>
   );
 };
