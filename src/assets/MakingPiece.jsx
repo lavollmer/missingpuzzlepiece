@@ -20,7 +20,7 @@ const MakingPiece = () => {
 
 
   return (
-    <div className="flex flex-col text-white text-xl md:text-2xl space-y-6 mt-6 px-6 py-6">
+    <div className="flex flex-col text-white text-xl md:text-2xl space-y-6 mt-6 px-6 py-6 m-10">
       <h1 className="text-2xl md:text-4xl text-center text-bold text-blue-300 mb-2">
         Making a Puzzle Piece
       </h1>

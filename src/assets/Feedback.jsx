@@ -45,6 +45,10 @@ const Feedback = () => {
     }
   };
 
+  const handleHomeClick = () => {
+    navigate("/");
+  };
+
   return (
     <div className="flex flex-col text-white text-center text-xl m-10">
       <h1 className="text-bold text-2xl text-green-200">Feedback Form</h1>
@@ -81,6 +85,14 @@ const Feedback = () => {
           </button>
         </div>
       </form>
+      <div>
+      <button
+        onClick={handleHomeClick}
+        style={{maxWidth: "200px"  }}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Return Home
+      </button>
+      </div>
     </div>
   );
 };

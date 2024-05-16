@@ -43,7 +43,7 @@ const Info = () => {
       </h2>
       <button
         onClick={handleQuestionClick}
-        className="bg-green-500 hover:bg-green-700 text-white text-xl font-bold py-2 px-4 rounded"
+        className="bg-blue-500 hover:bg-blue-700 text-white text-lg py-2 px-4 rounded"
       >
         Start Location Questions
       </button>
@@ -55,13 +55,13 @@ const Info = () => {
 
       <button
         onClick={handleManufacturerClick}
-        className="bg-blue-500 hover:bg-blue-700 text-white text-lg font-bold py-2 px-2 rounded"
+        className="bg-blue-500 hover:bg-blue-700 text-white text-lg py-2 px-4 rounded"
       >
         Contact Manufacturer
       </button>
       <button
         onClick={handleMakeAPieceClick}
-        className="bg-blue-500 hover:bg-blue-700 text-white text-lg font-bold py-2 px-2 rounded"
+        className="bg-blue-500 hover:bg-blue-700 text-white text-lg py-2 px-4 rounded"
       >
         Make a Puzzle Piece
       </button>
