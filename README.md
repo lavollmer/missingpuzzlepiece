@@ -44,7 +44,7 @@ Project Design Requested:
 ### Links
 
 - Github Repo URL: [Missing Puzzle Piece Github Repo](https://github.com/lavollmer/missingpuzzlepiece)
-- Live Site URL: [Missing Puzzle Piece]()
+- Live Site URL: [Missing Puzzle Piece](https://missing-puzzle-piece-b568b18a56c7.herokuapp.com/)
 
 ## My process
 
@@ -63,6 +63,11 @@ Project planning:
 - Vite
 - CSS custom properties
 - Mobile-first workflow
+- Google Fonts
+- Express.js
+- Node.js
+- POSTMAN
+- Heroku
 
 
 ### What I learned
@@ -72,24 +77,6 @@ Throughout the development of this project, I gained a deeper understanding of s
 1. **Tailwind CSS Setup:** The config file has updated terminology - `purge` is now `content`. Also, `app.css` should have the Tailwind CSS utilities. At the beginning of the project, I spent some time reconfiguring the section in order to work.
 2. **React useState Hook:** I learned the importance of correctly declaring the state variable and the function to update it inside an array using `useState`. I gained a deeper understanding of this concept throughout the navigation bar coding.
 4. **React Router Dom:** Gained a deeper understanding of `react-router-dom` and how it works within all the files. It is a library for routing in React applications. It allows to create multiple routes in the application and render different components. I am able to create SPAs while not navigating through multiple pages and refreshing.
-
-Tailwind Config File
-```js
-module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        fraunces: ["Fraunces", "sans-serif"],
-        barlow: ["Barlow", "sans-serif"],
-      },
-      fontWeight: {
-        600: "600",
-        700: "700",
-        900: "900",
-      },
-
-```
 
 ### Continued development
 
