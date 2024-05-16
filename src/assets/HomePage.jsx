@@ -6,7 +6,7 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/question");
+    navigate("/info");
   };
 
   const handleFAQClick = () => {

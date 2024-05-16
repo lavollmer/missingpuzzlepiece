@@ -10,6 +10,7 @@ import MakingPiece from "./assets/MakingPiece.jsx";
 import Footer from "./assets/Footer.jsx";
 import Feedback from "./assets/Feedback.jsx";
 import FAQ from "./assets/FAQ.jsx";
+import Info from "./assets/Info.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/result" element={<Result />} />
         <Route exact path="/feedback" element={<Feedback />} />
         <Route exact path="/faq" element={<FAQ />} />
+        <Route exact path="/info" element={<Info />} />
       </Routes>
       <Footer />
     </div>
