@@ -19,7 +19,7 @@ const ResultPage = () => {
   return (
     <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
       <h1 className="text-green-200 text-4xl">Congrats!</h1>
-      <h1>Thank you for using the <br/> Find My Puzzle Piece <br/>application!</h1>
+      <h1>Thank you for using the Find My Puzzle Piece application!</h1>
       <div>
         <h2>We hope you enjoyed it!</h2>
       </div>
