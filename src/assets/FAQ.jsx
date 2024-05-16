@@ -12,15 +12,29 @@ const FAQ = () => {
     <div className="flex flex-col items-center text-white text-lg m-10">
       <h1 className="text-green-300">Frequently Asked Questions (FAQ)</h1>
       <div className="flex flex-col items-left">
-        <h2 className="text-blue-200">What is Find My Puzzle Piece?</h2>
+        <h2 className="text-blue-200">What is the Find My Puzzle Piece Application?</h2>
         <p>
           Find My Puzzle Piece is a web application that helps users find a
-          missing puzzle piece. 
+          missing puzzle piece. Many puzzle pieces go missing and there are not many resources to help find them. 
         </p>
-        <h2 className="text-blue-200">How does Find My Puzzle Piece work?</h2>
-        <p>Find My Puzzle Piece is a web application that helps users find a
-          missing puzzle piece. The user will go through a series of most common places where a puzzle piece is lost. If unable to find with the questions listed, then the user will be directed to a manufacturer contact site.</p>
+        <h2 className="text-blue-200">How does Find My Puzzle Piece Application work?</h2>
+        <p>
+          Find My Puzzle Piece is a web application that helps users find a
+          missing puzzle piece. The user will go through a series of most common
+          places where a puzzle piece is lost. If unable to find with the
+          questions listed, then the user will be directed to a manufacturer
+          contact site. If unable to contact the manufacturer, the user will be directed to making a puzzle piece.
+        </p>
+        <h2 className="text-blue-200">Why was Find My Puzzle Piece created?</h2>
+        <p>
+          Find My Puzzle Piece was created because the developer saw a need for it in the puzzle community. 
+        </p>
+        <h2 className="text-blue-200">Does Fine My Puzzle Piece cost any money?</h2>
+        <p>
+          Find My Puzzle Piece is a FREE web application resource. If you enjoyed your experience, please submit feedback to help improve the product.
+        </p>
       </div>
+
       <button
         onClick={handleClick}
         className="bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded"
