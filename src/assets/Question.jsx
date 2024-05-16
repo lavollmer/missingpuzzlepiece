@@ -22,7 +22,7 @@ const Question = () => {
 
     //variable represents an array of questions used in the quiz
     const questions = [
-      "Look around your physical location for the puzzle piece.",
+      "To start, look around your physical location for the puzzle piece.",
       "Look under the table.",
       "Look at the packaging the puzzle came in.",
       "Check the plastic wrap the puzzle came in (if applicable).",
