@@ -13,7 +13,7 @@ const MakingPiece = () => {
   };
 
   return (
-    <div className="flex flex-col text-white text-xl md:text-2xl space-y-6 mt-10 px-6 py-6">
+    <div className="flex flex-col text-white text-xl md:text-2xl space-y-6 mt-6 px-6 py-6">
       <h1 className="text-2xl md:text-4xl text-center text-bold text-blue-300 mb-2">
         Making a Puzzle Piece
       </h1>
@@ -72,15 +72,15 @@ const MakingPiece = () => {
       <div className="flex flex-col space-y-6">
         <button
           onClick={handleClick}
-          className="bg-green-500 hover:bg-green-700 text-white text-lg py-2 px-4 rounded"
+          className="bg-green-500 hover:bg-green-700 font-bold text-white text-lg py-2 px-4 rounded"
         >
           Created the puzzle piece!
         </button>
         <button
           onClick={handleHomeClick}
-          className="bg-blue-500 hover:bg-blue-700 text-white text-lg  py-2 px-4 rounded"
+          className="bg-blue-500 hover:bg-blue-700 font-bold text-white text-lg  py-2 px-4 rounded"
         >
-          Home Page
+          Return Home
         </button>
       </div>
     </div>
