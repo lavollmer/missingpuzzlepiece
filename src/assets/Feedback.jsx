@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { UNSAFE_ErrorResponseImpl } from "react-router-dom";
 
 const Feedback = () => {
   const [feedback, setFeedback] = useState("");
@@ -10,22 +11,29 @@ const Feedback = () => {
     event.preventDefault();
     console.log(feedback);
 
-    const response = await fetch(
-      "https://findmypuzzlepiece.herokuapp.com/feedback",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ feedback: feedback }),
-      }
-    );
+    try {
+      const response = await fetch(
+        "https://missing-puzzle-piece-b568b18a56c7.herokuapp.com/feedback",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ feedback: feedback }),
+        }
+      );
 
-    if (response.ok) {
-      setFeedback("");
-      alert("Feedback submitted successfully!");
-    } else {
-      alert("Feedback submission failed.");
+      if (response.ok) {
+        setFeedback("");
+        alert("Feedback submitted successfully!");
+      } else {
+        alert("Feedback submission failed.");
+      }
+
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error(error);
     }
   };
 
