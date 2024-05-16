@@ -59,7 +59,7 @@ const Question = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center text-white text-center text-2xl md:text-3xl space-y-6  px-6 py-6">
+      <div className="flex flex-col items-center text-white text-center text-xl md:text-3xl space-y-6 px-6 py-6 font-montserrat font-regular">
         <p className="text-blue-300 text-xl">
           QUESTION {currentQuestionIndex + 1} of {questions.length}
         </p>
