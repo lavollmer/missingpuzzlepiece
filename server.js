@@ -4,6 +4,8 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors());
+
+//middleware
 app.use(express.json()); // for parsing application/json
 
 //The GET route sends a simple message to the browser
@@ -17,22 +19,6 @@ app.post('/feedback', (req, res) => {
   res.status(201).json({ message: 'Feedback received!' });
 });
 
-fetch('https://missing-puzzle-piece-b568b18a56c7.herokuapp.com/feedback')
-  .then(response => {
-    console.log(response.status); // Log the response status
-    console.log(response.headers.get('Content-Type')); // Log the Content-Type header
-    return response.text(); // Get the response body as text
-  })
-  .then(text => {
-    console.log(text); // Log the response body
-    return JSON.parse(text); // Try to parse the response body as JSON
-  })
-  .then(data => {
-    // Use the parsed data
-  })
-  .catch(error => {
-    console.error(error); // Log any errors
-  });
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Server started on port ${port}`));
