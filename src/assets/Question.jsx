@@ -8,6 +8,7 @@ const Question = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
 
   const navigate = useNavigate();
 
@@ -26,7 +27,7 @@ const Question = () => {
 
   //variable represents an array of questions used in the quiz
   const questions = [
-    "To start, look around your physical location for the puzzle piece.",
+    "Look around your physical location for the puzzle piece.",
     "Look under the table.",
     "Look at the packaging the puzzle came in.",
     "Check the plastic wrap the puzzle came in (if applicable).",

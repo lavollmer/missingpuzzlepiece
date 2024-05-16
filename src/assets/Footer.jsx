@@ -11,12 +11,12 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="flex flex-col items-center text-center text-md md:text-lg m-10">
+      <div className="flex flex-col items-center text-center text-sm md:text-lg m-10">
         <p className="text-white">
-          Copyright &copy; 2024. A creation by Laura Developer.
+          Copyright &copy; 2024. All rights reserved.
         </p>
         <p className="text-white">
-          An application made for puzzlers developed by a puzzler.
+        A creation by Laura Developer. An application made for puzzlers developed by a puzzler.
         </p>
         <a
           onClick={handleClick}

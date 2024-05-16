@@ -11,9 +11,11 @@ import Footer from "./assets/Footer.jsx";
 import Feedback from "./assets/Feedback.jsx";
 import FAQ from "./assets/FAQ.jsx";
 import Info from "./assets/Info.jsx";
+import {FoundProvider} from "./FoundContext.js";
 
 function App() {
   return (
+    <FoundProvider>
     <div className="bg-black min-h-screen w-screen space-y-4">
       <Routes>
         <Route exact path="/" element={<HomePage />} />
@@ -27,6 +29,7 @@ function App() {
       </Routes>
       <Footer />
     </div>
+    </FoundProvider>
   );
 }
 
