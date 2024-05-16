@@ -9,6 +9,14 @@ const Info = () => {
     navigate("/question");
   };
 
+  const handleManufacturerClick = () => {
+    navigate("/Manufacturer");
+  };
+
+  const handleMakeAPieceClick = () => {
+    navigate("/makingapuzzlepiece");
+  };
+
   return (
     <div className="flex flex-col text-white items-center justify-content m-6">
       <h1 className="text-xl font-bold mb-10">Before You Begin</h1>
@@ -40,13 +48,13 @@ const Info = () => {
           receive more resources, select one of the buttons below.
         </h2>
         <button
-          onClick={handleQuestionClick}
+          onClick={handleManufacturerClick}
           className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold py-2 px-8 rounded"
         >
           Contact Manufacturer
         </button>
         <button
-          onClick={handleQuestionClick}
+          onClick={handleMakeAPieceClick}
           className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold py-2 px-8 rounded"
         >
           Make a Puzzle Piece
