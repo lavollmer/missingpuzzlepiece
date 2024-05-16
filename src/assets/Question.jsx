@@ -8,7 +8,6 @@ const Question = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
 
   const navigate = useNavigate();
 
@@ -29,10 +28,8 @@ const Question = () => {
   const questions = [
     "Look around your physical location for the puzzle piece.",
     "Look under the table.",
-    "Look at the packaging the puzzle came in.",
     "Check the plastic wrap the puzzle came in (if applicable).",
     "Check the puzzle box.",
-    "Check your puzzle bag (if applicable).",
     "Look under the chairs around you or in the cushions.",
     "Look under the couch or in the cushions.",
     "Check your pockets or have others check the pockets of those around you.",
@@ -47,6 +44,7 @@ const Question = () => {
     "If others are aware you are working on the puzzle, ask if they are pulling a prank on you.",
     "If all the other pieces are placed, check that the pieces are in the right place.",
     "Check that you completed the puzzle minus the missing pieces. If missing pieces still, proceed.",
+    "Check your puzzle bag (if applicable).",
   ];
 
   const handleNoClick = () => {
@@ -61,7 +59,10 @@ const Question = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center text-white text-center text-2xl md:text-3xl space-y-6 mt-20 px-6 py-6">
+      <div className="flex flex-col items-center text-white text-center text-2xl md:text-3xl space-y-6  px-6 py-6">
+        <p className="text-blue-300 text-xl">
+          QUESTION {currentQuestionIndex + 1} of {questions.length}
+        </p>
         <h1>{questions[currentQuestionIndex]}</h1>
         <div className="flex flex-col space-y-6">
           <FoundButton onClick={handleFoundClick} label="Found" />

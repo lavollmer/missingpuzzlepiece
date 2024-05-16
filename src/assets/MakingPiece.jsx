@@ -78,15 +78,17 @@ const MakingPiece = () => {
       <p className="flex flex-col items-center">
         Let us know if you made the puzzle piece!
       </p>
-      <div className="flex flex-col space-y-6">
+      <div className="flex flex-col items-center space-y-6">
         <button
           onClick={handleClick}
+          style = {{maxWidth: "200"}}
           className="bg-green-500 hover:bg-green-700 font-bold text-white text-lg py-2 px-4 rounded"
         >
           Created the puzzle piece!
         </button>
         <button
           onClick={handleHomeClick}
+          style = {{maxWidth: "200"}}
           className="bg-blue-500 hover:bg-blue-700 font-bold text-white text-lg  py-2 px-4 rounded"
         >
           Return Home
