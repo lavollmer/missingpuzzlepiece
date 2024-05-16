@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FoundContext } from "../FoundContext.jsx";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -7,6 +7,8 @@ const ResultPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const { foundCount } = React.useContext(FoundContext);
 
   const navigate = useNavigate();
 
@@ -24,6 +26,7 @@ const ResultPage = () => {
       <h1>Thank you for using the Find My Puzzle Piece application!</h1>
       <div>
         <h2>We hope you enjoyed it!</h2>
+        <h1>The found button has been clicked {foundCount} times.</h1>
       </div>
       <button
         onClick={handleClick}

@@ -11,7 +11,7 @@ import Footer from "./assets/Footer.jsx";
 import Feedback from "./assets/Feedback.jsx";
 import FAQ from "./assets/FAQ.jsx";
 import Info from "./assets/Info.jsx";
-import {FoundProvider} from "./FoundContext.js";
+import {FoundProvider} from "./FoundContext.jsx";
 
 function App() {
   return (
