@@ -99,6 +99,7 @@ Throughout this project, I learned a lot about Tailwind CSS, styling and how all
 
 - Website - [Laura Vollmer](https://lauradeveloper.com/)
 - Github Profile - [@lavollmer](https://github.com/lavollmer)
+- Heroku - [Heroku Deployed Application] (https://missing-puzzle-piece-b568b18a56c7.herokuapp.com/)
 
 ## Acknowledgments
 
