@@ -43,7 +43,7 @@ const FAQ = () => {
         <h2 className="text-blue-200 mb-2">
           Does Fine My Puzzle Piece cost any money?
         </h2>
-        <p className="mb-4">
+        <p className="mb-2">
           Find My Puzzle Piece is a FREE web application resource. If you
           enjoyed your experience, please submit feedback to help improve the
           product.
