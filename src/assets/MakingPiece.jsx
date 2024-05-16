@@ -12,6 +12,8 @@ const MakingPiece = () => {
     navigate("/");
   };
 
+
+
   return (
     <div className="flex flex-col text-white text-xl md:text-2xl space-y-6 mt-6 px-6 py-6">
       <h1 className="text-2xl md:text-4xl text-center text-bold text-blue-300 mb-2">
@@ -40,9 +42,9 @@ const MakingPiece = () => {
       </h2>
       <ol className="space-y-4">
         <li>
-          1. Find a piece of cardboard that is similar in thickness to the puzzle
-          piece you are missing. The ideal thickness for a puzzle backing is
-          around one-eighth inch (0.3 cm).
+          1. Find a piece of cardboard that is similar in thickness to the
+          puzzle piece you are missing. The ideal thickness for a puzzle backing
+          is around one-eighth inch (0.3 cm).
         </li>
         <li>
           2. Place the cardboard below the puzzle and trace around the empty
@@ -68,7 +70,9 @@ const MakingPiece = () => {
           that may be sticking out.
         </li>
       </ol>
-      <p className="flex flex-col items-center">Let us know if you made the puzzle piece!</p>
+      <p className="flex flex-col items-center">
+        Let us know if you made the puzzle piece!
+      </p>
       <div className="flex flex-col space-y-6">
         <button
           onClick={handleClick}
