@@ -1,8 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import { UNSAFE_ErrorResponseImpl } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Feedback = () => {
+  const history = useHistory ();  
+  
   const [feedback, setFeedback] = useState("");
   const [thumbsUp, setThumbsUp] = useState(false);
   const [thumbsDown, setThumbsDown] = useState(false);
@@ -26,6 +28,7 @@ const Feedback = () => {
       if (response.ok) {
         setFeedback("");
         alert("Feedback submitted successfully!");
+        history.push("/");
       } else {
         alert("Feedback submission failed.");
       }
