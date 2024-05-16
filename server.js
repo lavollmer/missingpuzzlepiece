@@ -8,6 +8,8 @@ app.use(cors());
 //middleware
 app.use(express.json()); // for parsing application/json
 
+app.use(express.static('dist'));
+
 //The GET route sends a simple message to the browser
 app.get('/feedback', (req, res) => {
   res.json({ message: 'Hello from the server!' });
