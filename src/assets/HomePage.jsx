@@ -21,8 +21,8 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
-        <h1 className="text-4xl md:text-4xl text-bold mb-2">Find My <br/> Puzzle Piece</h1>
+      <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-10 px-6 py-6">
+        <h1 className="text-4xl md:text-4xl text-bold">Find My <br/> Puzzle Piece</h1>
         <p className="font-bold text-xl md:text-2xl text-green-500 mb-6">A Free Application</p>
         <p className="text-xl md:text-2xl mb-8">Lost a puzzle piece? Let us help!</p>
         <button onClick={handleClick} className='bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold py-2 px-10 rounded'>Start</button>
