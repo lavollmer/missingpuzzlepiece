@@ -18,7 +18,7 @@ This project involved creating a missing puzzle piece application, adhering to a
 
 ## Overview
 
-The project's scope involved developing a missing puzzle piece application using ReactJS, Tailwind CSS, JavaScript, and Vite. 
+The project's scope involved developing a missing puzzle piece application using ReactJS, Tailwind CSS, JavaScript, and Vite. Additionally, I worked on using various features to help build out this application to include a frontend and backend server.
 
 ### The challenge
 
@@ -68,6 +68,7 @@ Project planning:
 - Node.js
 - POSTMAN
 - Heroku
+- Icon Logo
 
 
 ### What I learned
