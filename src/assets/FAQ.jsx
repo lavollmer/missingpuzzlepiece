@@ -25,7 +25,9 @@ const FAQ = () => {
         <p className="mb-4">
           Find My Puzzle Piece is a web application that helps users find a
           missing puzzle piece. Many puzzle pieces go missing and there are not
-          many resources to find or replace them. Puzzles depreciate in value when a piece is missing. Find My Puzzle Piece is a FREE web application that helps users find or replace a missing puzzle piece.
+          many resources to find or replace them. Puzzles depreciate in value
+          when a piece is missing. Find My Puzzle Piece is a FREE web
+          application that helps users find or replace a missing puzzle piece.
         </p>
         <h2 className="text-blue-200 mb-2">
           How does Find My Puzzle Piece Application work?
