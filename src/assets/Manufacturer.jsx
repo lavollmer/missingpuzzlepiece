@@ -16,8 +16,8 @@ const Manufacturer = () => {
   };
 
   return (
-    <div className="flex flex-col text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
-      <h1 className="text-2xl md:text-3xl text-bold mb-2 text-blue-300">
+    <div className="flex flex-col text-white text-center text-lg md:text-2xl space-y-6 mt-20 px-6 py-6">
+      <h1 className="text-xl md:text-3xl text-bold mb-2 text-blue-300">
         Contact the Manufacturer
       </h1>
       <p>
@@ -29,7 +29,7 @@ const Manufacturer = () => {
         <div className="bg-blue-500 rounded-full p-2 inline-flex items-center justify-center">
           <FaPuzzlePiece className="text-white" />
         </div>
-        <h2 className="text-xl md:text-2xl text-bold mb-2 text-black">
+        <h2 className="text-lg md:text-2xl text-bold mb-2 text-black">
           Ravensburger
         </h2>
         <a
@@ -44,7 +44,7 @@ const Manufacturer = () => {
         <div className="bg-blue-500 rounded-full p-2 inline-flex items-center justify-center">
           <FaPuzzlePiece className="text-white" />
         </div>
-        <h2 className="text-xl md:text-2xl text-bold mb-2 text-black">
+        <h2 className="text-lg md:text-2xl text-bold mb-2 text-black">
           Cobble Hill
         </h2>
         <a
@@ -59,7 +59,7 @@ const Manufacturer = () => {
         <div className="bg-blue-500 rounded-full p-2 inline-flex items-center justify-center">
           <FaPuzzlePiece className="text-white" />
         </div>
-        <h2 className="text-xl md:text-2xl text-bold mb-2 text-black">
+        <h2 className="text-lg md:text-2xl text-bold mb-2 text-black">
           Buffalo Games
         </h2>
         <a
@@ -74,7 +74,7 @@ const Manufacturer = () => {
         <div className="bg-blue-500 rounded-full p-2 inline-flex items-center justify-center">
           <FaPuzzlePiece className="text-white" />
         </div>
-        <h2 className="text-xl md:text-2xl text-bold mb-2 text-black">
+        <h2 className="text-lg md:text-2xl text-bold mb-2 text-black">
           Pomegranate
         </h2>
         <a
@@ -85,7 +85,7 @@ const Manufacturer = () => {
           Contact Pomegranate &rarr;
         </a>
       </div>
-      <div className="flex flex-col items-center text-white text-center text-xl md:text-2xl space-y-6 mt-20 px-6 py-6">
+      <div className="flex flex-col items-center text-white text-center text-lg md:text-2xl space-y-6 mt-20 px-6 py-6">
         <h2>I would like to make my own puzzle piece.</h2>
         <button
           onClick={handleClick}
