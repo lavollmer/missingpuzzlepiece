@@ -52,49 +52,51 @@ const Feedback = () => {
   return (
     <div className="flex flex-col text-black text-center">
       <div className="border bg-white p-4 rounded w-3/4 mx-auto shadow-md">
-        <h1 className="text-bold text-2xl text-green-800 p-2">Feedback</h1>
+        <h1 className="text-bold text-2xl p-2 font-bold">Feedback</h1>
         <div className="text-lg">
-        <p className="mb-4">
-          Please fill out this feedback form so we can improve our site!
-        </p>
-        <div className="mb-4">
-          <p>Did you enjoy using the site? (select one)</p>
-          <button type="button" onClick={() => setThumbsUp(!thumbsUp)}>
-            {thumbsUp ? "Yes👍" : "Yes👍"}
-          </button>
-          <button type="button" onClick={() => setThumbsDown(!thumbsDown)}>
-            {thumbsDown ? "No👎" : "No👎"}
-          </button>
-        </div>
-        <p className="mb-4">
-          How was your experience with our site? Any suggestions?
-        </p>
-        <form onSubmit={handleSubmit}>
-          <textarea
-            className="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="feedback"
-            type="text"
-            placeholder="Enter your feedback"
-            value={feedback}
-            onChange={(e) => setFeedback(e.target.value)}
-          />
-          <div className="flex flex-col items-center justify-between mb-4">
-            <button
-              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="submit"
-            >
-              Submit
+          <p className="mb-4">
+            We're always striving to improve. Please share your thoughts about
+            the site!
+          </p>
+          <div className="mb-4 ">
+            <p className="font-bold">Did you find our site helpful? (select one)</p>
+            <button type="button" onClick={() => setThumbsUp(!thumbsUp)}>
+              {thumbsUp ? "Yes👍" : "Yes👍"}
+            </button>
+            <button type="button" onClick={() => setThumbsDown(!thumbsDown)}>
+              {thumbsDown ? "No👎" : "No👎"}
             </button>
           </div>
-        </form>
-        <div>
-          <button
-            onClick={handleHomeClick}
-            style={{ maxWidth: "200px" }}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Return Home
-          </button>
+          <p className="mb-4 font-bold">
+            Could you share more about your experience? Any areas for
+            improvement?
+          </p>
+          <form onSubmit={handleSubmit}>
+            <textarea
+              className="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="feedback"
+              type="text"
+              placeholder="Enter your feedback"
+              value={feedback}
+              onChange={(e) => setFeedback(e.target.value)}
+            />
+            <div className="flex flex-col items-center justify-between mb-4">
+              <button
+                className="bg-green-500 hover:bg-green-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+          <div>
+            <button
+              onClick={handleHomeClick}
+              style={{ maxWidth: "200px" }}
+              className="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Return Home
+            </button>
           </div>
         </div>
       </div>
