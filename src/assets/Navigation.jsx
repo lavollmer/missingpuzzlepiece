@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { RiCloseLargeFill } from "react-icons/ri";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ function Navigation() {
             onClick={() => setIsOpen(false)}
             className="md:hidden block text-black"
           >
-            Close
+            <RiCloseLargeFill size={30}/>
           </button>
           <ul className="md:flex md:space-x-6">
             <li>
