@@ -53,13 +53,15 @@ const Feedback = () => {
     <div className="flex flex-col text-black text-center">
       <div className="border bg-white p-4 rounded w-3/4 mx-auto shadow-md">
         <h1 className="text-bold text-2xl p-2 font-bold">Feedback</h1>
-        <div className="text-lg">
+        <div className="text-lg space-y-4 p-2">
           <p className="mb-4">
             We're always striving to improve. Please share your thoughts about
             the site!
           </p>
           <div className="mb-4 ">
-            <p className="font-bold">Did you find our site helpful? (select one)</p>
+            <p className="font-bold">
+              Did you find our site helpful? (select one)
+            </p>
             <button type="button" onClick={() => setThumbsUp(!thumbsUp)}>
               {thumbsUp ? "Yes👍" : "Yes👍"}
             </button>
@@ -89,7 +91,8 @@ const Feedback = () => {
               </button>
             </div>
           </form>
-          <div>
+
+          {/* <div>
             <button
               onClick={handleHomeClick}
               style={{ maxWidth: "200px" }}
@@ -97,7 +100,7 @@ const Feedback = () => {
             >
               Return Home
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -44,7 +44,7 @@ function Navigation() {
                   className="block p-4 text-black"
                   onClick={() => setIsOpen(false)}
                 >
-                  App Information
+                  Information
                 </Link>
               </li>
               <li>
