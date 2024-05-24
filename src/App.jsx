@@ -11,24 +11,26 @@ import Footer from "./assets/Footer.jsx";
 import Feedback from "./assets/Feedback.jsx";
 import FAQ from "./assets/FAQ.jsx";
 import Info from "./assets/Info.jsx";
-import {FoundProvider} from "./FoundContext.jsx";
+import { FoundProvider } from "./FoundContext.jsx";
+import Navigation from "./assets/Navigation.jsx";
 
 function App() {
   return (
     <FoundProvider>
-    <div className="bg-black min-h-screen w-screen space-y-4">
-      <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/question" element={<Question />} />
-        <Route exact path="/manufacturer" element={<Manufacturer />} />
-        <Route exact path="/makingapuzzlepiece" element={<MakingPiece />} />
-        <Route exact path="/result" element={<Result />} />
-        <Route exact path="/feedback" element={<Feedback />} />
-        <Route exact path="/faq" element={<FAQ />} />
-        <Route exact path="/info" element={<Info />} />
-      </Routes>
-      <Footer />
-    </div>
+      <div className="bg-black min-h-screen w-screen space-y-4">
+        <Navigation />
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/question" element={<Question />} />
+          <Route exact path="/manufacturer" element={<Manufacturer />} />
+          <Route exact path="/makingapuzzlepiece" element={<MakingPiece />} />
+          <Route exact path="/result" element={<Result />} />
+          <Route exact path="/feedback" element={<Feedback />} />
+          <Route exact path="/faq" element={<FAQ />} />
+          <Route exact path="/info" element={<Info />} />
+        </Routes>
+        <Footer />
+      </div>
     </FoundProvider>
   );
 }
