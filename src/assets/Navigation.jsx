@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { BrowserRouter, Link } from "react-router-dom";
 import { RiCloseLargeFill } from "react-icons/ri";
 
 function Navigation() {
@@ -24,33 +25,33 @@ function Navigation() {
             onClick={() => setIsOpen(false)}
             className="md:hidden block text-black"
           >
-            <RiCloseLargeFill size={30}/>
+            <RiCloseLargeFill size={30} />
           </button>
           <ul className="md:flex md:space-x-6">
             <li>
-              <a href="#home" className="block p-4 text-black">
+              <Link to="/" className="block p-4 text-black" onClick={() => setIsOpen(false)}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="block p-4 text-black">
+              <Link to="/question" className="block p-4 text-black" onClick={() => setIsOpen(false)}>
                 Questions
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="block p-4 text-black">
+              <Link to="/manufacturer" className="block p-4 text-black" onClick={() => setIsOpen(false)}>
                 Contact Manufacturer
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="block p-4 text-black">
+              <Link to="/makingapuzzlepiece" className="block p-4 text-black" onClick={() => setIsOpen(false)}>
                 Make a Puzzle Piece
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="block p-4 text-black">
+              <Link to="/feedback" className="block p-4 text-black" onClick={() => setIsOpen(false)}>
                 Feedback
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
