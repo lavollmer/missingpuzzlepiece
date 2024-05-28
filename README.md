@@ -103,4 +103,4 @@ Throughout this project, I learned a lot about Tailwind CSS, styling and how all
 
 ## Acknowledgments
 
-None
+Modal Basic Code - https://flowbite.com/docs/components/modal/
