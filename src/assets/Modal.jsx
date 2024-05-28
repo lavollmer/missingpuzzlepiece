@@ -4,9 +4,9 @@ import { useState } from "react";
 const Modal = () => {
   const [isOpen, setIsOpen] = useState(true);
 
-  const toggleModal = () => {
-    setIsOpen(!isOpen);
-  };
+  //   const toggleModal = () => {
+  //     setIsOpen(!isOpen);
+  //   };
 
   const handleClose = () => {
     setIsOpen(false);
@@ -18,7 +18,7 @@ const Modal = () => {
 
   return (
     <div>
-      <button
+      {/* <button
         onClick={toggleModal}
         data-modal-target="static-modal"
         data-modal-toggle="static-modal"
@@ -27,7 +27,7 @@ const Modal = () => {
       >
         Developer Notification
       </button>
-      {isOpen && <Modal handleClose={toggleModal} />}
+      {isOpen && <Modal handleClose={toggleModal} />} */}
       <div
         id="static-modal"
         tabIndex="-1"
@@ -45,7 +45,7 @@ const Modal = () => {
               <button
                 onClick={handleClose}
                 type="button"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center  dark:hover:bg-gray-600 dark:hover:text-white"
                 data-modal-hide="static-modal"
               >
                 <svg
@@ -71,9 +71,11 @@ const Modal = () => {
               <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                 This application is currently in the user testing phase. As
                 such, you may encounter some bugs and updates may be required. I
-                appreciate your understanding and patience. If you have any
-                feedback or suggestions, I'd love to hear from you. Thank you
-                for supporting Find My Puzzle Piece!
+                appreciate your understanding and patience.
+              </p>
+              <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                If you have any feedback or suggestions, I'd love to hear from
+                you. Thank you for supporting Find My Puzzle Piece!
               </p>
             </div>
           </div>
