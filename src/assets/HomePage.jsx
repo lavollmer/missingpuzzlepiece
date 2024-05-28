@@ -1,8 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import {useEffect} from "react";
+import {useState} from "react";
+import Modal from './Modal.jsx';
 
 const HomePage = () => {
+const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,6 +24,7 @@ const HomePage = () => {
 
   return (
     <>
+    {showModal && <Modal setShowModal={setShowModal} />}
       <div className="flex flex-col items-center text-center space-y-6 m-6 text-white text-lg md:text-2xl  font-montserrat font-medium">
         <h1 className="text-2xl">Find My Puzzle Piece</h1>
         <p className="font-bold text-green-500 mb-6">A Free Application</p>

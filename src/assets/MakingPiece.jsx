@@ -28,7 +28,7 @@ const MakingPiece = () => {
         There are various online services, informative YouTube videos, and
         helpful articles available that provide guidance on creating your own
         puzzle piece. Below, you'll find a selection of instructions to help you
-        make your very own puzzle piece
+        make your very own puzzle piece from this website. Please use discretion when using these resources to determine the best course of action.
       </p>
       <div className="flex flex-col text-left">
         <h2 className="text-xl md:text-2xl text-bold mb-2 text-blue-300">
@@ -71,7 +71,7 @@ const MakingPiece = () => {
           box, on top of the puzzle while it dried.
         </li>
         <li>
-          6.Once the glue has dried, remove any uneven edges or excess cardboard
+          6. Once the glue has dried, remove any uneven edges or excess cardboard
           that may be sticking out.
         </li>
       </ol>
@@ -84,7 +84,7 @@ const MakingPiece = () => {
           style = {{maxWidth: "200"}}
           className="bg-green-500 hover:bg-green-700 font-bold text-white text-lg py-2 px-4 rounded"
         >
-          Created the puzzle piece!
+          I made my puzzle piece!
         </button>
         <button
           onClick={handleHomeClick}
