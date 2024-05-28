@@ -26,7 +26,7 @@ const Info = () => {
     <div className="flex flex-col text-white items-center m-10 space-y-6 font-montserrat font-regular">
       <h1 className="text-2xl font-bold mb-6">Before You Begin</h1>
       <h2 className="text-lg mb-10">
-        You will be shown a series of questions (one at a time) to help find
+        You will be shown a series of 19 questions (one at a time) to help find
         your puzzle piece. Results are best if you review each question and
         search for your puzzle piece in the location described.
       </h2>
@@ -35,7 +35,7 @@ const Info = () => {
       </h2>
       <h2 className="text-lg mb-10">
         Select the NO button if you have not found your puzzle piece in the
-        location described.
+        location described. The application will direct you to the next location question.
       </h2>
       <h2 className="text-lg mb-10">
         If you have went through all location questions, you will be given other
@@ -49,8 +49,7 @@ const Info = () => {
       </button>
 
       <h2 className="text-lg mb-4">
-        If you have went through all location questions or would like to receive
-        more resources, select one of the buttons below.
+        If you would like to skip the location questions and move to the next section - select one of the buttons below.
       </h2>
 
       <button

@@ -21,9 +21,7 @@ const Manufacturer = () => {
         Contact the Manufacturer
       </h1>
       <p>
-        Here, we've gathered a list of the top puzzle makers in the USA. If you
-        don't see your preferred manufacturer, feel free to look them up online
-        or go ahead and start creating your puzzle piece.
+      Here is a list of the most popular puzzle makers with links to their Contact Us pages. If you can't find your favorite manufacturer here, don't worry! You can always search for them online. 
       </p>
       <div className="border bg-white p-2 rounded w-1/2 mx-auto shadow-lg">
         <div className="bg-blue-500 rounded-full p-2 inline-flex items-center justify-center">
@@ -86,7 +84,7 @@ const Manufacturer = () => {
         </a>
       </div>
       <div className="flex flex-col items-center text-white text-center text-lg md:text-2xl space-y-6 mt-20 px-6 py-6">
-        <h2>I would like to make my own puzzle piece.</h2>
+        <h2>Or better yet, why not start creating your very own puzzle piece? </h2>
         <button
           onClick={handleClick}
           className="bg-blue-500 hover:bg-blue-700 text-white text-md py-2 px-4 rounded"
