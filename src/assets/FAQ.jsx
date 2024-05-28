@@ -19,7 +19,7 @@ const FAQ = () => {
         Frequently Asked Questions (FAQ)
       </h1>
       <div className="flex flex-col items-center mb-10">
-        <h2 className="text-blue-200 mb-2">
+        <h2 className="text-blue-200 mb-2 font-bold">
           What is the Find My Puzzle Piece Application?
         </h2>
         <p className="mb-4">
@@ -29,7 +29,7 @@ const FAQ = () => {
           when a piece is missing. Find My Puzzle Piece is a FREE 
           application that helps users find or replace a missing puzzle piece.
         </p>
-        <h2 className="text-blue-200 mb-2">
+        <h2 className="text-blue-200 mb-2 font-bold">
           How does Find My Puzzle Piece Application work?
         </h2>
         <p className="mb-4">
@@ -40,7 +40,7 @@ const FAQ = () => {
           contact site. If unable to contact the manufacturer, the user will be
           directed to making a puzzle piece.
         </p>
-        <h2 className="text-blue-200 mb-2">
+        <h2 className="text-blue-200 mb-2 font-bold">
           Does Find My Puzzle Piece cost any money?
         </h2>
         <p className="mb-4">
@@ -48,7 +48,7 @@ const FAQ = () => {
           enjoyed your experience, please submit feedback to help improve the
           product.
         </p>
-        <h2 className="text-blue-200 mb-2">
+        <h2 className="text-blue-200 mb-2 font-bold">
           Why was Find My Puzzle Piece created?
         </h2>
         <p className="mb-4">

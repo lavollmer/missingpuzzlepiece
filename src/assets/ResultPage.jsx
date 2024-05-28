@@ -26,7 +26,7 @@ const ResultPage = () => {
       <h1>We have saved {foundCount} puzzles and counting!</h1>
       <h1>Thank you for using the Find My Puzzle Piece application!</h1>
       <div>
-        <h2>We hope you enjoyed it!</h2>
+        <h2>I hope you enjoyed it!</h2>
       </div>
       <button
         onClick={handleFeedbackClick}
