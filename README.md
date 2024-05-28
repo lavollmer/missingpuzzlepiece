@@ -10,7 +10,6 @@ This project involved creating a missing puzzle piece application, adhering to a
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -86,15 +85,6 @@ Project management:
 - Heroku
 - Icon Logo
 
-
-### What I learned
-
-Throughout the development of this project, I gained a deeper understanding of several important concepts and tools. Here are the key learnings:
-
-1. **Tailwind CSS Setup:** The config file has updated terminology - `purge` is now `content`. Also, `app.css` should have the Tailwind CSS utilities. At the beginning of the project, I spent some time reconfiguring the section in order to work.
-2. **React useState Hook:** I learned the importance of correctly declaring the state variable and the function to update it inside an array using `useState`. I gained a deeper understanding of this concept throughout the navigation bar coding.
-4. **React Router Dom:** Gained a deeper understanding of `react-router-dom` and how it works within all the files. It is a library for routing in React applications. It allows to create multiple routes in the application and render different components. I am able to create SPAs while not navigating through multiple pages and refreshing.
-
 ### Continued development
 
 Throughout this project, I learned a lot about Tailwind CSS, styling and how all the applications work together. I very much enjoyed creating an application from nothing. I will continue learning through freeCodeCamp, Frontend Mentor challenges and self-application.
@@ -107,4 +97,7 @@ Throughout this project, I learned a lot about Tailwind CSS, styling and how all
 
 ## Acknowledgments
 
+Github copilot AI was used during the development of this project to help navigate questions or seek more information.
+
+Code base references:
 Modal Basic Code - https://flowbite.com/docs/components/modal/
