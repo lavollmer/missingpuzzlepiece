@@ -26,8 +26,9 @@ This application was developed as a personal project to address a common issue f
 ### Screenshot
 
 Website Screenshot:
-![Laura's Home Page]()
+![Laura's Home Page](./src/assets/MissingPuzzlePieceHomePage.png)
 
+TBD:
 Brand Section Website Screenshot:
 ![Laura's Question Page]()
 
@@ -43,7 +44,7 @@ Project Design Requested:
 ### Links
 
 - Github Repo URL: [Missing Puzzle Piece Github Repo](https://github.com/lavollmer/missingpuzzlepiece)
-- Live Site URL: [Missing Puzzle Piece](https://missing-puzzle-piece-b568b18a56c7.herokuapp.com/)
+- Live Site URL: [Missing Puzzle Piece](https://cozy-llama-1c2ff9.netlify.app/)
 
 ## My process
 
@@ -52,7 +53,7 @@ My process for building this website involved planning, building and refractorin
 Project management:
 1. The project began with an in-depth analysis of the problem at hand, exploring various strategies for handling missing puzzle pieces and conducting market research. It became evident that replacing or replicating missing pieces is often challenging, making the discovery of the original piece the most viable solution for many.
 2. Post-market research, a comprehensive project plan was drafted, including a mockup of the desired project outcome and strategies for user-friendliness. The objective was to achieve a high Lighthouse report rating, create a user-friendly website, and effectively address the problem.
-3. The application development began with the creation of a Github Repository. The chosen tech stack comprised Vite, Tailwind CSS, React, and Heroku. Initial efforts were focused on ensuring seamless integration and proper setup.
+3. The application development began with the creation of a Github Repository. The chosen tech stack comprised Vite, Tailwind CSS, React, and Netlify. Initial efforts were focused on ensuring seamless integration and proper setup.
 4. The mockup drawing was used as a blueprint to determine the required components and their organization. The aim was to utilize reusable components to minimize technical debt and workload. Initial components created included Question, Result Page, and End Page, prioritizing basic functionality before UI and design.
 5. Routing was identified as a crucial aspect of the application to ensure a smooth and directed user experience. React-router-dom was employed for navigation between pages, and the navigation hook was utilized to ensure seamless transitions.
 6. Subsequently, reusable FOUND and NO buttons were created for each question. These buttons guide the user in their search for the missing puzzle piece. The FOUND button redirects users to the Result Page, displaying a congratulatory message and the number of puzzles saved by the application. The NO button leads the user to the next question, aiding in the search for the missing piece.
@@ -82,7 +83,7 @@ Project management:
 - Express.js
 - Node.js
 - POSTMAN
-- Heroku
+- Netlify
 - Icon Logo
 
 ### Continued development
@@ -93,7 +94,7 @@ Throughout this project, I learned a lot about Tailwind CSS, styling and how all
 
 - Website - [Laura Vollmer](https://lauradeveloper.com/)
 - Github Profile - [@lavollmer](https://github.com/lavollmer)
-- Heroku - [Heroku Deployed Application] (https://missing-puzzle-piece-b568b18a56c7.herokuapp.com/)
+- Netlify - [Netlify Deployed Application] (https://cozy-llama-1c2ff9.netlify.app/)
 
 ## Acknowledgments
 
